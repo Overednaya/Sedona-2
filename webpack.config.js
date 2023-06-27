@@ -1,63 +1,62 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-
 module.exports = {
-  plugins: [
-    new CopyWebpackPlugin({
-      patterns: [
-        { from: 'index.html', to: 'build' }
-      ]
-    })
-  ],
-  mode: 'production', // или 'development' для режима разработки
-  entry: './source/index.html', // входной файл вашего HTML
+  mode: 'development',
+  entry: './source/index.js',
   output: {
-    filename: 'index.html', // имя выходного файла HTML
-    path: path.resolve(__dirname, 'build'), // путь к выходной директории
-    clean: true, // очистка выходной директории перед каждой сборкой
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'build'),
+    clean: true,
   },
   module: {
     rules: [
       {
-        test: /\.less$/, // загрузчик для файлов LESS
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader'],
+        test: /\.less$/,
+        use: ['style-loader', 'css-loader', 'less-loader'],
       },
       {
-        test: /\.(png|jpg|webp)$/, // загрузчик для изображений
+        test: /\.(png|jpg|webp)$/,
         type: 'asset/resource',
         generator: {
-          filename: 'img/[name].[hash][ext]', // путь и имя выходного файла изображения
+          filename: 'img/[name].[hash][ext]',
         },
       },
       {
-        test: /\.svg$/, // загрузчик для файлов SVG
-        type: 'asset/inline',
+        test: /\.html$/,
+        use: ['html-loader'],
       },
-    ],
-  },
-  optimization: {
-    minimizer: [
-      new CssMinimizerPlugin(), // минимизация CSS
-      new TerserPlugin(), // минимизация JavaScript
-      new HtmlWebpackPlugin({
-        template: './source/index.html', // шаблон HTML-файла
-        filename: 'index.html',
-        minify: {
-          collapseWhitespace: true, // сжатие HTML
-        },
-      }),
-    ],
-  },
 
+    ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './source/index.html',
+      filename: 'index.html',
+      chunks: ['main'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './source/form.html',
+      filename: 'form.html',
+      chunks: ['form'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './source/catalog.html',
+      filename: 'catalog.html',
+      chunks: ['catalog'],
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'source/img', to: 'img' },
+      ],
+    }),
+  ],
   devServer: {
     static: {
-      directory: path.resolve(__dirname, 'build'), // путь к содержимому dev-сервера
+      directory: path.resolve(__dirname, 'build'),
     },
-    port: 8080, // порт dev-сервера
-    open: true, // автоматическое открытие браузера при запуске dev-сервера
+    port: 8080,
+    open: true,
   },
 };
