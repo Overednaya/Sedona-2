@@ -1805,6 +1805,7 @@ html {
   font-size: 18px;
   text-align: center;
   margin-bottom: 32px;
+  padding-top: 30px;
 }
 @media (min-width: 768px) {
   .gallery-video__caption {
