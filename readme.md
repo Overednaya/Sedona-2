@@ -34,11 +34,11 @@ The website is designed to be responsive and provides three versions tailored fo
 
 To run the Sedona City website locally:
 
-1. Clone the repository: `git clone https://github.com/YourUsername/Sedona.git`
+1. Clone the repository: `git clone https://github.com/Overednaya/Sedona-2.git`
 2. Navigate to the project directory: `cd Sedona`
 3. Install dependencies: `npm install`
 4. Build the project: `npm run build`
-5. Open the `index.html` file in your preferred web browser.
+5. Just enjoy `npm run start`
 
 ## Contributing
 
