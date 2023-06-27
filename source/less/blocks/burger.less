@@ -1,0 +1,78 @@
+.burger {
+  width: 23px;
+  height: 22px;
+  z-index: 5;
+  background-color: @blue;
+  border: none;
+  margin-left: auto;
+  margin-top: 3px;
+  display: block;
+  margin-right: 16px;
+  position: relative;
+  top: auto;
+  right: 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 5px;
+  background-color: @white;
+}
+
+.burger::before {
+  top: 4px;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.burger::after {
+  bottom: 4px;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-header--opened .burger {
+  background-color: inherit;
+}
+
+.main-header--opened .burger::after {
+  transform: rotate(-45deg);
+  bottom: 10px;
+  height: 4px;
+}
+
+.main-header--opened .burger::before {
+  transform: rotate(45deg);
+  top: 8px;
+  height: 4px;
+}
+
+.no-js .burger {
+  display: none;
+}
+
+.burger:active {
+  background-color: fade(@blue, 30%);
+}
+
+.burger:hover {
+  background-color: fade(@blue, 60%);
+}
+
+.burger:active .burger::after,
+.burger:active .burger::before {
+  background-color: fade(@white, 30%);
+}
+
+.burger:hover .burger::after,
+.burger:hover .burger::before {
+  background-color: fade(@white, 60%);
+}

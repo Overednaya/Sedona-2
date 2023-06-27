@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedona</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="img/32.svg" />
+  <link rel="icon" href="img/152.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="preload" href="./fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" as="font">
+</head>
+
+<body class="page__body">
+  <div class="page__container">
+    <header class="main-header no-js">
+      <div class="main-header__wrapper">
+        <div class="main-header__logo">
+          <a class="main-header__logo-link">
+            <img class="main-header__logo-img" width="185" height="96" src="img/logo.svg"
+              alt="Logo of Sedona city" />
+          </a>
+        </div>
+        <button id="toggle" class="burger"><span class="visually-hidden"> Open menu </span></button>
+        <div class="main-header__dropdown main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link link main-nav__link--current">Main</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Photo and video</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Feedback form</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="index-container">
+      <h1 class="visually-hidden">Sedona town</h1>
+      <section class="slogan-index">
+        <div class="slogan-index__container">
+          <h2 class="visually-hidden">sedona slogan</h2>
+          <div class="slogan-index__box">
+            <img class="slogan-index__image" src="img/slogan-index.svg" width="282" height="214"
+              alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks.">
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__box">
+          <h2 class="advantages__caption"> Sedon - small town <span class="advantages__wrap">
+              in Arizona, </span>
+            that deserves more!</h2>
+          <p class="advantages__text">Consider 5 reasons Sedona is better than Grand Canyon!</p>
+        </div>
+        <div class="advantages__wrapper">
+          <h2 class="visually-hidden">Why you should visit Sedona?</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--colored">
+              <div class="advantages__item-wrapper">
+                <div class="advantages__item-text">
+                  <h3 class="advantages__title"> <span>Real</span> <span>town</span></h3>
+                  <p class="advantages__number"> — №1 — </p>
+                  <p class="advantages__description">There is a real life, not only entertaiment for tourists</p>
+                </div>
+                <div class="advantages__image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/photo-city@1x.webp 1x, img/photo-city@2x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/photo-city-tablet@1x.webp 1x, img/photo-city-tablet@2x.webp 2x" />
+                    <source type="image/webp"
+                      srcset="img/photo-city-mobile@1x.webp 1x, img/photo-city-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="
+                              img/photo-city@1x.jpg  1x,
+                              img/photo-city@2x.jpg 2x
+                            " />
+                    <source media="(min-width: 768px)" srcset="
+                              img/photo-city-tablet@1x.jpg   1x,
+                        img/photo-city-tablet@2x.jpg 2x
+                      " />
+                    <img class="advantages__image" src="img/photo-city-mobile@1x.jpg"
+                      srcset="img/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="Город Седона." />
+                  </picture>
+                </div>
+              </div>
+              <ul class=" advantages__subitem subitem">
+                <li class="subitem__item">
+                  <svg class="subitem__icon" width="39" height="37" viewBox="0 0 39 37">
+                    <use xlink:href="img/sprite.svg#icon-house"></use>
+                  </svg>
+                  <h3 class="subitem__title">Accomodation</h3>
+                  <p class="subitem__description">We recommend you to live in a real motel, like in a movie!</p>
+                </li>
+                <li class="subitem__item">
+                  <svg class="subitem__icon" width="40" height="35" viewBox="0 0 40 35">
+                    <use xlink:href="img/sprite.svg#icon-burger"></use>
+                  </svg>
+                  <h3 class="subitem__title">Food</h3>
+                  <p class="subitem__description subitem__description--width">Always order a real burger,<span>
+                      You won`t be disappointed!</span></p>
+                </li>
+                <li class="subitem__item">
+                  <svg class="subitem__icon" width="32" height="38" viewBox="0 0 32 38">
+                    <use xlink:href="img/sprite.svg#icon-gift"></use>
+                  </svg>
+                  <h3 class="subitem__title">Souvenirs</h3>
+                  <p class="subitem__description">Not only Chinede,<span> but also locally produced! </span></p>
+                </li>
+              </ul>
+            </li>
+
+            <li class="advantages__item advantages__item--colored advantages__item--colored-other">
+              <div class="advantages__item-wrapper">
+                <div class="advantages__item-text">
+                  <h3 class="advantages__title"> <span>There is</span> <span> the Devil Bridge</span>
+                  </h3>
+                  <p class="advantages__number"> — №2 — </p>
+                  <p class="advantages__description">Yes, you can go there <span class="advantages__wrap-2">Sure, if you brave enought </span> </p>
+                </div>
+                <div class="advantages__image-wrapper advantages__image-wrapper--first">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/photo-bridge@1x.webp 1x, img/photo-bridge@2x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x" />
+                    <source type="image/webp"
+                      srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="
+                      img/photo-bridge@1x.jpg  1x,
+                      img/photo-bridge@2x.jpg 2x
+                    " />
+                    <source media="(min-width: 768px)" srcset="
+                      img/photo-bridge-tablet@1x.jpg   1x,
+                      img/photo-bridge-tablet@2x.jpg 2x
+                    " />
+                    <img class="advantages__image" src="img/photo-bridge-mobile@1x.jpg"
+                      srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Город Седона." />
+                  </picture>
+                </div>
+              </div>
+            </li>
+
+            <li class="advantages__item">
+              <h3 class="advantages__title"> Small area</h3>
+              <p class="advantages__number"> — №3 — </p>
+              <p class="advantages__description">All interesting places are close</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Excting road</h3>
+              <p class="advantages__number"> — №4 — </p>
+              <p class="advantages__description advantages__description--width">Way to Sedona from Los Angeles is not boring!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Few tourists</h3>
+              <p class="advantages__number"> — №5 — </p>
+              <p class="advantages__description">Most of them go to the Grand Canyon and crowd there
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="search-hotel">
+        <div class="search-hotel__box">
+          <h2 class="visually-hidden"> Search a hotel</h2>
+          <h3 class="search-hotel__caption"> Interested?</h3>
+          <p class="search-hotel__text"> <span class="search-hotel__wrap">Select your travel dates,</span>
+           and we show you the best places to stay</p>
+        </div>
+        <a class="search-hotel__button button">Search hotel</a>
+      </section>
+      <section class="adress">
+        <h2 class="visually-hidden"> Sedona territory</h2>
+        <div class="adress__box">
+          <iframe class="adress__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050597664!2d-111.83015799809978!3d34.85437338103204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1660721788672!5m2!1sru!2sru"
+            width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <picture>
+            <source media="(min-width: 1280px)" srcset="
+              img/map-desktop.jpg  1x,
+              img/map-desktop@2x.jpg 2x
+            " />
+            <source media="(min-width: 768px)" srcset="
+              img/map-tablet.jpg   1x,
+              img/map-tablet@2x.jpg 2x
+            " />
+            <img class="adress__image adress__image--nojs" id="map" src="img/map-mobile.jpg"
+              srcset="img/map-mobile@2x.jpg 2x" width="320" height="350" alt="adress." />
+          </picture>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/script.js" defer></script>
+    <script src="./js/map.js" defer></script>
+
+  </div>
+</body>
+
+</html>

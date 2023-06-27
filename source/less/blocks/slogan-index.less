@@ -1,0 +1,71 @@
+.slogan-index {
+  background-color: @white;
+}
+
+.slogan-index__container {
+  background: @dark-blue url("../img/back-mobile.webp") no-repeat center/cover;
+  padding-top: 90px;
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 97%, 0 90%, 0 0);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.webp");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/back-index-tablet.webp");
+    padding-top: 78px;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 94%,
+      96% 95%,
+      96% 90%,
+      50% 100%,
+      4% 90%,
+      4% 95%,
+      0 94%
+    );
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-index-tablet@2x.webp");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/back-index-desktop.webp");
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 90%,
+      79% 95%,
+      79% 90%,
+      50% 100%,
+      21% 90%,
+      21% 95%,
+      0 90%
+    );
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-index-desktop@2x.webp");
+    }
+  }
+}
+
+.slogan-index__box {
+  padding-bottom: 100px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 33px;
+  }
+}
+
+.slogan-index__image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+    margin-bottom: 50px;
+  }
+}

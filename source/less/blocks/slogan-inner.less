@@ -1,0 +1,67 @@
+.slogan-inner {
+  background-color: @white;
+}
+
+.slogan-inner__box {
+  background: @dark-blue url("../img/back-mobile-inner@1x.webp") no-repeat
+    center bottom/cover;
+  padding-top: 52px;
+  padding-bottom: 62px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile-inner@2x.webp");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/back-tablet.webp");
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 84%,
+      96% 85%,
+      96% 77%,
+      50% 96%,
+      4% 77%,
+      4% 84%,
+      0 84%
+    );
+    padding-top: 93px;
+    padding-bottom: 130px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.webp");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/back-desktop.webp");
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 82%,
+      79% 90%,
+      79% 81%,
+      50% 100%,
+      21% 81%,
+      21% 90%,
+      0 82%
+    );
+    padding-top: 103px;
+    padding-bottom: 112px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.webp");
+    }
+  }
+}
+
+.slogan-inner__image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    height: auto;
+    width: 460px;
+  }
+}

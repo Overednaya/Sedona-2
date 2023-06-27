@@ -1,0 +1,38 @@
+.list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link-reset() {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-common() {
+  cursor: pointer;
+  font-family: @font-family-base;
+  border: none;
+  background-color: @blue;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.24;
+  color: @white;
+  text-align: center;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #669ec0;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}

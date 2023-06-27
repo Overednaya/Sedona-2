@@ -1,0 +1,42 @@
+html {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page__body {
+  font-size: @font-size-base;
+  font-family: @font-family-base;
+  text-transform: @text-transform-base;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @desktop-width) {
+    background-color: @light-grey;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page__container {
+  @media (min-width: @desktop-width) {
+    max-width: @desktop-width;
+    margin: 0 auto;
+    box-shadow: -15px 0 15px rgba(0, 1, 1, 0.1), 15px 0 15px rgba(0, 1, 1, 0.1);
+  }
+}

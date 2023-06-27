@@ -1,0 +1,110 @@
+.form {
+  padding-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 60px;
+  }
+}
+
+.form__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.form__box {
+  padding-bottom: 28px;
+  padding-top: 44px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 52px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 118px;
+    padding-bottom: 50px;
+  }
+}
+
+.form__caption {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.44;
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 0.87;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.form__wrap {
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.form__text {
+  margin: 0;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+
+.form__button {
+  .button-common();
+  padding-top: 18px;
+  padding-bottom: 14px;
+  margin-top: -10px;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    margin-top: -26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    margin-left: 95px;
+    padding-left: 95px;
+    padding-right: 109px;
+    padding-top: 21px;
+  }
+}
+
+.form__legend {
+  font-size: 12px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 0.6);
+  text-align: right;
+  display: block;
+  margin-top: 2px;
+
+  @media (min-width: @tablet-width) {
+    align-self: flex-start;
+    font-size: @font-size-base;
+    color: rgba(51, 51, 51, 1);
+
+    @media (min-width: @desktop-width) {
+      margin-right: 96px;
+      margin-bottom: 14px;
+    }
+  }
+}

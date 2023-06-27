@@ -1,0 +1,118 @@
+.radio {
+  .list-reset();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    padding-left: 35px;
+    padding-right: 20px;
+    row-gap: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 20px;
+    justify-content: flex-start;
+    row-gap: 0;
+    padding-left: 53px;
+    padding-right: 10px;
+  }
+}
+
+.radio__item {
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 56px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    flex: 0 0 250px;
+    margin-right: 58px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 78px;
+    }
+  }
+}
+
+.radio__label {
+  cursor: pointer;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.44;
+  display: flex;
+  align-items: center;
+}
+
+.radio__button {
+  flex: 0 0 46px;
+  height: 46px;
+  background-color: @form-grey;
+  margin-right: 16px;
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 18px;
+  }
+}
+
+.radio__button::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: @black;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.radio__input:checked + .radio__button::before {
+  display: block;
+}
+
+.radio__label:hover .radio__button {
+  background-color: @grey;
+}
+
+.radio__label:focus .radio__button {
+  background-color: @active-grey;
+}
+
+.radio__label:focus .radio__button::before {
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
+.radio__label:active .radio__button {
+  background-color: @active-grey;
+}
+
+.radio__label:active .radio__button::before {
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
+.radio__label:focus-within .radio__button {
+  background-color: @active-grey;
+}

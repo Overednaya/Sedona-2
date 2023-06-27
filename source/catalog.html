@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фото и видео</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="img/32.svg" />
+  <link rel="icon" href="img/152.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="preload" href="./fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" as="font">
+</head>
+
+<body class="page__body">
+  <div class="page__container">
+    <header class="main-header no-js">
+      <div class="main-header__wrapper">
+        <div class="main-header__logo">
+          <a class="main-header__logo-link" href="index.html">
+            <img class="main-header__logo-img" width="185" height="96" src="img/logo.svg"
+              alt="Логотип города Седона." />
+          </a>
+        </div>
+        <button id="toggle" class="burger"><span class="visually-hidden"> Открыть меню </span></button>
+        <div class="main-header__dropdown main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML
+                Academy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="inner-container">
+      <section class="slogan-inner">
+        <h1 class="visually-hidden">Фото и видео</h1>
+        <div class="slogan-inner__box">
+          <img class="slogan-inner__image" src="img/slogan-inner.svg" width="229" height="39" alt="Sedona">
+        </div>
+      </section>
+
+
+      <section class="gallery">
+        <div class="gallery__box">
+          <h2 class="gallery__caption"> Фото и видео</h2>
+          <p class="gallery__text"><span class="gallery__wrap">Не можете решиться на путешествие из-за курса?</span>
+            Фотографии помогут вам забыть о
+            политике и экономике.</p>
+        </div>
+        <div class="gallery__wrapper">
+          <ul class="gallery__list">
+            <li class="gallery__post post post--popular">
+              <div class="post__content">
+                <a class="post__link">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/photo-1-tablet@1x.webp 1x, img/photo-1-tablet@2x.webp 2x" />
+                    <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="
+                      img/photo-1-desktop.jpg  1x,
+                      img/photo-1-desktop@2x.jpg 2x
+                    " />
+                    <source media="(min-width: 768px)" srcset="
+                      img/photo-1-tablet@1x.jpg   1x,
+                      img/photo-1-tablet@2x.jpg 2x
+                    " />
+                    <img class="post__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"
+                      width="280" height="280" alt="Изображение дороги на закате" />
+                  </picture>
+                </a>
+                <div class="post__description">
+                  <div class="post__text-box">
+                    <div class="post__text">
+                      <h3 class="post__title">
+                        Неродные просторы
+                      </h3>
+                      <p class="post__author">Автор фото: Борис</p>
+                    </div>
+                    <div class="post__like">
+                      <a class="post__like-link" href="#">
+                        <svg class="post__like-icon" width="23" height="21" viewBox="0 0 23 21">
+                          <use xlink:href="img/sprite.svg#like-icon"></use>
+                        </svg>
+                      </a>
+                      <span class="post__like-count">1350</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="gallery__post post">
+              <div class="post__content">
+                <a class="post__link">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/photo-2-tablet@1x.webp 1x, img/photo-2-tablet@2x.webp 2x" />
+                    <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="
+                                img/photo-2-desktop.jpg  1x,
+                                img/photo-2-desktop@2x.jpg 2x
+                              " />
+                    <source media="(min-width: 768px)" srcset="
+                                img/photo-2-tablet@1x.jpg   1x,
+                                img/photo-2-tablet@2x.jpg 2x
+                              " />
+                    <img class="post__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"
+                      width="280" height="280" alt="Изображение кактуса с желтыми цветами" />
+                  </picture>
+                </a>
+                <div class="post__description">
+                  <div class="post__text-box">
+                    <div class="post__text">
+                      <h3 class="post__title">
+                        Местная растительность
+                      </h3>
+                      <p class="post__author">Автор фото: Сергей</p>
+                    </div>
+                    <div class="post__like">
+                      <a class="post__like-link" href="#">
+                        <svg class="post__like-icon" width="23" height="21" viewBox="0 0 23 21">
+                          <use xlink:href="img/sprite.svg#like-icon"></use>
+                        </svg>
+                      </a>
+                      <span class="post__like-count">143</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="gallery__post post">
+              <div class="post__content">
+                <a class="post__link">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/photo-3-tablet@1x.webp 1x, img/photo-3-tablet@2x.webp 2x" />
+                    <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="
+                      img/photo-3-desktop.jpg  1x,
+                      img/photo-3-desktop@2x.jpg 2x
+                    " />
+                    <source media="(min-width: 768px)" srcset="
+                      img/photo-3-tablet@1x.jpg   1x,
+                      img/photo-3-tablet@2x.jpg 2x
+                    " />
+                    <img class="post__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"
+                      width="280" height="280" alt="Изображение дороги в горах" />
+                  </picture>
+                </a>
+                <div class="post__description">
+                  <div class="post__text-box">
+                    <div class="post__text">
+                      <h3 class="post__title">
+                        Дорога на Север
+                      </h3>
+                      <p class="post__author">Автор фото: Петр</p>
+                    </div>
+                    <div class="post__like">
+                      <a class="post__like-link" href="#">
+                        <svg class="post__like-icon" width="23" height="21" viewBox="0 0 23 21">
+                          <use xlink:href="img/sprite.svg#like-icon"></use>
+                        </svg>
+                      </a>
+                      <span class="post__like-count">96</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="gallery__post post">
+              <div class="post__content">
+                <a class="post__link">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/photo-4-desktop@1x.webp 1x, img/photo-4-desktop@2x.webp 2x" />
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/photo-4-tablet@1x.webp 1x, img/photo-4-tablet@2x.webp 2x" />
+                    <source type="image/webp" srcset="img/photo-4-mobile@1x.webp 1x, img/photo-4-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="
+                      img/photo-4-desktop@1x.jpg  1x,
+                      img/photo-4-desktop@2x.jpg 2x
+                    " />
+                    <source media="(min-width: 768px)" srcset="
+                      img/photo-4-tablet@1x.jpg   1x,
+                      img/photo-4-tablet@2x.jpg 2x
+                    " />
+                    <img class="post__image" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x"
+                      width="280" height="280" alt="Изображение гор" />
+                  </picture>
+                </a>
+                <div class="post__description">
+                  <div class="post__text-box">
+                    <div class="post__text">
+                      <h3 class="post__title">
+                        Мост Дьявола
+                      </h3>
+                      <p class="post__author">Автор фото: Антон</p>
+                    </div>
+                    <div class="post__like like">
+                      <a class="post__like-link" href="#">
+                        <svg class="post__like-icon" width="23" height="21" viewBox="0 0 23 21">
+                          <use xlink:href="img/sprite.svg#like-icon"></use>
+                        </svg>
+                      </a>
+                      <span class="post__like-count">254</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="gallery-video">
+        <div class="gallery-video__box">
+          <h3 class="gallery-video__caption">Все еще сомневаетесь?</h3>
+          <p class="gallery-video__text"> <span class="gallery-video__wrap">Смотрите видеопрезентацию и скорее за
+              билетами, пока они </span> не подорожали в
+            очередной раз!</p>
+        </div>
+        <div class="gallery-video__wrapper">
+          <button class="gallery-video__button"><span class="visually-hidden"> Воспроизвести видео</span></button>
+          <div class="gallery-video__poster-wrapper">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="
+              img/video-desktop@1x.jpg  1x,
+              img/video-desktop@2x.jpg 2x
+            " />
+              <source media="(min-width: 768px)" srcset="
+              img/video-tablet@1x.jpg   1x,
+              img/video-tablet@2x.jpg 2x
+            " />
+              <img class="gallery-video__poster" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x"
+                width="280" height="177" alt="Включить видео" />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer main-footer--inner">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__tag">
+          <a class="main-footer__link" href="https://twitter.com/hashtag/visitsedona">
+            #VISITSEDONA
+          </a>
+        </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+                <svg class="social__icon" width="24" height="14" viewBox="0 0 24 14">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <svg class="social__icon" width="22" height="18" viewBox="0 0 22 18">
+                  <use xlink:href="img/sprite.svg#icon-tg"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Телеграме</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="social__icon" width="20" height="14" viewBox="0 0 20 14">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Ютубе </span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">Разработано:</p>
+            <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js" defer></script>
+  </div>
+</body>
+
+</html>
